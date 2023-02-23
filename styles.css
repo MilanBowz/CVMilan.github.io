@@ -6,10 +6,11 @@ body{
 }
 h1{font: 400 58px/60px 'Bree Serif', Georgia, serif; color:#ffffff;}
 h2{font: 400 30px/32px 'Bree Serif', Georgia, serif; color:#ffffff;}
-h3{font: 400 14px/16px 'Bree Serif', Georgia, serif; color:#ffffff;}
+h3{font: 400 20px/24px 'Bree Serif', Georgia, serif; color:#ffffff;}
+p{font-size:17px;}
 
-ul{list-style-type: square; margin-left: 0; margin-right: 0; padding: 0;}
-li{margin-left: 15.0pt;}
+ul{list-style-type: square; margin-left: 0; margin-right: 0; padding: 0;font-size:17px;}
+li{margin-left: 15.0pt;font-size:17px;}
 .nopoint {margin:0px; padding:0px;}
 .nopoint li {margin:0px; padding:0px;}
 
