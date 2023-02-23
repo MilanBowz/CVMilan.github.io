@@ -49,12 +49,12 @@ a img{border:0px;}
 #header #logo img{
 	height:80px;
 }
-#header #main-menu{float:right; padding-top:20px;padding-right:25px;}
+#header #main-menu{float:right; padding-top:15px;padding-right:25px;}
 #header #main-menu li{
 	float:left;
 	list-style:none;
 	margin-left:27px;
-	font: 400 16px/20px 'Bree Serif', Georgia, serif;
+	font: 400 17px/20px 'Bree Serif', Georgia, serif;
 }
 
 /****************************************************/
@@ -83,6 +83,11 @@ a img{border:0px;}
 	list-style:none;
 	float:left;
 	margin-right:20px;
+}
+#about img{
+	width: 25%;
+	height: 25%;
+	border-radius: 50%;
 }
 .contentcentertext{
 	overflow:auto;
@@ -151,6 +156,9 @@ justify-content: space-around;	}
 	margin:0;
 	padding:0;
 }
+iframe{
+	width:100%;
+}
 
 /****************************************************/
 /* CONNECT SECTION */
@@ -172,9 +180,9 @@ justify-content: space-around;	}
 	float:left;
 	width:255px;
 	border:0px;
-	color:#3b3b3b;
+	color:#000000;
 	padding:10px 10px 10px 30px;
-	font: 400 11px/20px 'Open Sans', Verdana, Helvetica, sans-serif;
+	font: 400 17px/20px 'Open Sans', Verdana, Helvetica, sans-serif;
 	margin-bottom:10px;
 }
 #connect #form textarea{
@@ -184,19 +192,19 @@ justify-content: space-around;	}
 	height:100px;
 	padding:10px 10px 10px 30px;
 	font: 400 11px/20px 'Open Sans', Verdana, Helvetica, sans-serif;
-	color:#3b3b3b;
+	color:#000000;
 }
 
-#connect #form input.name{background:#222222 url(images/icon-user.png) no-repeat 10px 8px;}
-#connect #form input.email{background:#222222 url(images/icon-mail.png) no-repeat 10px 9px;}
-#connect #form textarea.message{background:#222222 url(images/icon-message.png) no-repeat 10px 8px;}
+#connect #form input.name{background:#ffffff url(images/icon-user.png) no-repeat 10px 8px;}
+#connect #form input.email{background:#ffffff url(images/icon-mail.png) no-repeat 10px 9px;}
+#connect #form textarea.message{background:#ffffff url(images/icon-message.png) no-repeat 10px 8px;}
 #connect #form input.submit{ 
 	width:75px;   
 	height:30px;
 	float:right;
 	padding:0px 0px 5px 0px;
 	margin:10px 16px 0px 0px;
-	background:#222222;
+	background:#00ffff;
 	color:#3b3b3b;
 	font: 400 14px/16px 'Bree Serif', Georgia, serif;
 }
@@ -241,8 +249,8 @@ justify-content: space-around;	}
 
 /*smartphone use*/
 
-@media (max-width: 500px) {
-   #main-menu lu:nth-child(2){
+@media (max-width: 600px) {
+   #main-menu ul{
 	   display:none;
 	   width:0px;
    }
@@ -263,11 +271,30 @@ justify-content: space-around;	}
    #experiences .col{
 	 width:100%;
    }
-   .project div:nth-child(2) *,.project div:nth-child(2) {
-	  display:none;
-	  width:0px;
-   }
-   .project div:first-child{
+   .project {
+	overflow:auto;
+	display: flex;
+	flex-flow:column;
+	
+	text-align: left;
+	justify-content:left;
+	border-bottom: 3px solid black;
 	width:100%;
-}
+	}
+   
+   .project div , .project div:first-child{
+		width:100%;
+	}
+	.project div *{
+		width:100%;
+	}
+	#header #main-menu{width:100%;display:flex;flex-flow:row;justify-content:space-evenly;padding-top:15px;}
+	#header #main-menu li{
+	list-style:none;
+	margin:0;
+	font: 400 17px/20px 'Bree Serif', Georgia, serif;
+	}
+	#header #logo img{
+		display:none;
+	}
 }
