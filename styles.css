@@ -296,4 +296,9 @@ iframe{
 	#header #logo img{
 		display:none;
 	}
+	#about img{
+	width: 50%;
+	height: 50%;
+	border-radius: 50%;
+}
 }
