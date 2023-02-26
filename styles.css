@@ -106,14 +106,14 @@ a img{border:0px;}
 }
 #experiences {
 	display:flex;
-	justify-content: space-around;
+	justify-content: space-between;
 }
 #experience .col{
-	width:235px;
+	width:100%;
 	float:left;
 }
 #experience .row{
-	width:235px;
+	width:33%;
 	float:left;
 	flex-flow:row;
 	text-align: left;
@@ -211,7 +211,7 @@ iframe{
 #connect #social-footer{
 	width:300px;
 	float:left;
-	margin-left:75px;
+	margin-left:25px;
 }
 #connect #social-footer #sm-links{margin-top:25px;}
 #connect #social-footer #sm-links li{
@@ -223,7 +223,7 @@ iframe{
 	text-indent:-9999px;
 	width:26px; 
 	height:26px;
-	margin-right:10px;
+	margin-right:5px;
 }
 #connect #social-footer #sm-links li a.youtube{background:url(images/sm-youtube-icon.png) no-repeat; width:28px;}
 #connect #social-footer #sm-links li a.linkedin{background:url(images/sm-linkedin-icon.png) no-repeat;}
