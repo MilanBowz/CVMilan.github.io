@@ -84,8 +84,8 @@ a img{border:0px;}
 	margin-right:20px;
 }
 #about img{
-	width: 25%;
-	height: 25%;
+	width: 200px;
+	height: 200px;
 	border-radius: 50%;
 }
 .contentcentertext{
@@ -101,6 +101,8 @@ a img{border:0px;}
 /****************************************************/
 
 #experience{
+	display:flex;
+	flex-flow:column;
 	margin:0px 43px;
 	padding-top:115px;
 }
@@ -121,7 +123,7 @@ a img{border:0px;}
 	
 }
 
-#experience .content{overflow:auto;	display: flex;
+#experience .content{overflow:none;	display: flex;
 	flex-flow:row;
 	text-align: left;
 	justify-content:center;
@@ -163,7 +165,6 @@ iframe{
 /* CONNECT SECTION */
 /****************************************************/
 #connect{margin:0px 43px; padding-top:115px;}
-#connect .content{overflow:auto;}
 #connect #form{
 	width:410px;
 	float:left;
@@ -249,6 +250,16 @@ iframe{
 /*smartphone use*/
 
 @media (max-width: 600px) {
+   #header #main-menu{width:100%;display:flex;flex-flow:row;justify-content:space-evenly;padding-top:15px;}
+	#header #main-menu li{
+	list-style:none;
+	margin:0;
+	font: 400 17px/20px 'Bree Serif', Georgia, serif;
+	}
+	#header #logo img{
+		display:none;
+	}
+	
    #main-menu ul{
 	   display:none;
 	   width:0px;
@@ -256,6 +267,10 @@ iframe{
    #container div{
 	   margin:0;
    }
+   #about img{
+	width: 200px;
+	height: 200px;
+	}
    #experiences  {
 	width:100%;
 	float:left;
@@ -287,18 +302,5 @@ iframe{
 	.project div *{
 		width:100%;
 	}
-	#header #main-menu{width:100%;display:flex;flex-flow:row;justify-content:space-evenly;padding-top:15px;}
-	#header #main-menu li{
-	list-style:none;
-	margin:0;
-	font: 400 17px/20px 'Bree Serif', Georgia, serif;
-	}
-	#header #logo img{
-		display:none;
-	}
-	#about img{
-	width: 50%;
-	height: 50%;
-	border-radius: 50%;
-}
+	
 }
